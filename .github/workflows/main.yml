@@ -14,6 +14,6 @@ jobs:
           node-version: 14
       - run: npm i
         working-directory: client
-      - run: npm test:unit
+      - run: npm run test:unit
         working-directory: client
             
