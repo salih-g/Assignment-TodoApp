@@ -1,0 +1,29 @@
+{
+	"name": "todoapp-api",
+	"version": "1.0.0",
+	"description": "Basic api for todo app",
+	"main": "index.js",
+	"jest": {
+		"testEnvironment": "node"
+	},
+	"scripts": {
+		"start": "node index.js",
+		"dev": "nodemon index.js",
+		"test": "jest --forceExit",
+		"test:watch": "jest --watchAll"
+	},
+	"repository": "https://github.com/sudanmerinosu/Assignment-TodoApp",
+	"author": "Muhammed Salih Gümüş",
+	"license": "MIT",
+	"dependencies": {
+		"cors": "^2.8.5",
+		"dotenv": "^10.0.0",
+		"express": "^4.17.1",
+		"mongoose": "^5.13.7"
+	},
+	"devDependencies": {
+		"jest": "^27.0.6",
+		"nodemon": "^2.0.12",
+		"supertest": "^6.1.6"
+	}
+}
