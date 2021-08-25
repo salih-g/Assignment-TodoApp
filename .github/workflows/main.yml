@@ -7,7 +7,8 @@ on:
 jobs:
   client:
     runs-on: ubuntu-latest
-    environment: VUE_APP_API_URL
+    env: 
+        VUE_APP_API_URL: ${{secrets.VUE_APP_API_URL}}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
@@ -19,7 +20,8 @@ jobs:
         working-directory: client
   api:
     runs-on: ubuntu-latest
-    environment: MONGO_URL
+    env:
+        MONGO_URL: ${{secrets.MONGO_URL}}
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
