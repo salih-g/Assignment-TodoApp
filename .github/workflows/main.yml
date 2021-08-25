@@ -17,3 +17,16 @@ jobs:
       - run: npm run test:unit
         working-directory: client
             
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 14
+      - run: npm i
+        working-directory: api
+      - run: npm run test
+        working-directory: api
+            
