@@ -13,7 +13,7 @@ jobs:
         with:
           node-version: 14
       - run: npm ci
-        working-directory: ./client
+        working-directory: client
       - run: npm test:unit
-        working-directory: ./client
+        working-directory: client
             
