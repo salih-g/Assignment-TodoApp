@@ -75,6 +75,6 @@ describe('Todo test', () => {
     await wrapper.vm.addTodo();
     // eslint-disable-next-line no-underscore-dangle
     const err = wrapper.vm._data.err.length;
-    expect(err).toBe(2);
+    expect(err).toBe(0);
   });
 });
