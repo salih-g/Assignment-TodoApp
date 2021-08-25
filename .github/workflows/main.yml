@@ -12,7 +12,9 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 14
-      working-directory: ./client
-      - run: npm ci
-      - run: npm test:unit
-      - run: npm run build
+      - run: | 
+              npm ci
+              npm test:unit
+              npm run build
+        working-directory: ./client
+            
