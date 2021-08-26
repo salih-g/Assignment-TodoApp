@@ -32,4 +32,6 @@ jobs:
         working-directory: api
       - run: npm run test
         working-directory: api
+    
+    build:
             
