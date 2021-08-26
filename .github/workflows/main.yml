@@ -34,9 +34,7 @@ jobs:
         working-directory: api
     
   build:
-    needs: |
-            client
-            api
+    needs: client
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
