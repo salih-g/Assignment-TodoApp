@@ -1,4 +1,4 @@
-name: Test
+name: Client
 
 on:
   push:
@@ -20,17 +20,3 @@ jobs:
         working-directory: client
       - run: npm run deploy
         working-directory: client
-  api:
-    runs-on: ubuntu-latest
-    env:
-        MONGO_URL: ${{secrets.MONGO_URL}}
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v1
-        with:
-          node-version: 14
-      - run: npm i
-        working-directory: api
-      - run: npm run test
-        working-directory: api
-            
