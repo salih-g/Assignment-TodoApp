@@ -25,6 +25,7 @@ This is learn project about Full-Stack with A-TDD
 ## Setup and Usage
 
 - Clone this repo to your desktop
+- You should add `./client` and `./api` directory to `.env` according to `.env.example` 
 
 ### Acceptance Test
 
