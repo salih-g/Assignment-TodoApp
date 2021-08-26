@@ -32,15 +32,3 @@ jobs:
         working-directory: api
       - run: npm run test
         working-directory: api
-    
-  build:
-    needs: client
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - uses: akhileshns/heroku-deploy@v3.12.12 
-        with:
-          heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-          heroku_app_name: "assignment-todo-app" 
-          heroku_email: "sudanmerinosu@gmail.com"
-            
